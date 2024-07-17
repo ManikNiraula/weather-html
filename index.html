@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hourly</title>
+  <style>
+    input {
+      border: 0px;
+      background: none;
+      color: black;
+    }
+
+    input:focus-visible {
+      border: 0;
+    }
+
+    .text {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+
+</head>
+
+<body style="background-color:#e4eaf2; margin: 0; padding: 0;">
+  <div style="background-color: black;">
+    <div style="display: flex; justify-content:space-between; gap:5px; align-items: center; margin: 0 150px;">
+      <div style="display: flex;gap: 3px; align-items: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="orange" class="bi bi-brightness-low-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707M3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707" />
+        </svg>
+        <h3 style="color: white;">Accuweather</h3>
+        <p style="color: white; margin-left: 8px;">Kathmandu, Bagmati 24°C</p>
+      </div>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <div style="background-color: white; display: flex;padding: 4px 8px;">
+          <svg style="color:black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" height="16" width="16">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+
+          <input type="text" id="search" name="search" placeholder="Address,city or Zip code" />
+
+        </div>
+        <a href="https://www.accuweather.com/en/videos">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-play-btn"
+            viewBox="0 0 16 16">
+            <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    style="display: flex;justify-content: space-evenly; gap: 10px; margin: 10px 150px; text-decoration: none; color: black;">
+    <a class="text" href="./today.html">TODAY</a>
+    <a class="text" href="./hourly.html">HOURLY</a>
+    <a class="text" href="./daily.html">DAILY</a>
+    <a class="text" href="https://www.accuweather.com/en/np/kathmandu/241809/weather-radar/241809">RADAR</a>
+    <a class="text"
+      href="https://www.accuweather.com/en/np/kathmandu/241809/minute-weather-forecast/241809">MINUTECAST</a>
+    <a class="text" href="https://www.accuweather.com/en/np/kathmandu/241809/july-weather/241809">MONTHLY</a>
+    <a class="text" href="https://www.accuweather.com/en/np/kathmandu/241809/air-quality-index/241809">AIR QUALITY</a>
+    <a class="text" href="https://www.accuweather.com/en/np/kathmandu/241809/health-activities/241809">HEALTH &
+      ACTIVITIES</a>
+    <a class="text" href="https://afb.accuweather.com/">FOR BUSINESS</a>
+  </div>
+  <hr style="margin: 0 150px;" />
+  <div style=" padding:100px; margin: 20px 150px;background-color:white ">
+
+  </div>
+  <br />
+  <div style="display: flex; gap: 28px; margin: 50px 150px;">
+    <div style="width:70%;">
+      <div style=" padding:50px; background-color:white ">
+        <div style="display: flex; justify-content: space-between; gap: 25px;">
+          <span style="display: flex; gap:12px ;width:50%">
+            <p>4pm</p>
+            <svg height="50" width="50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+            </svg>
+
+            <p>27°</p>
+          </span>
+          <div style="display: flex; justify-content:space-between;align-items: center; width:50%">
+            <span>
+              <p>RealFeel® 29°</p>
+            </span>
+            <span style="display: flex; gap: 12px; align-items: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z" />
+                <path fill-rule="evenodd"
+                  d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z" />
+              </svg>
+
+              <p>40%</p>
+              <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+
+            </span>
+          </div>
+        </div>
+        <p>mostly cloudy</p>
+        <div style="display: grid;gap: 16px;grid-template-columns: 50% 50%;">
+          <span>
+
+
+            <div style="display: flex;justify-content: space-between;">
+              <p>RealFeel Shade™ </p>
+              <p> 28°</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p>Wind </p>
+              <p> SSW 15 km/h</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p>Wind Gusts</p>
+              <p> 19 km/h</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p>Humidity </p>
+              <p> 72%</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p>Indoor Humidity</p>
+              <p> 72%(Very Humid)</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p>Dew point </p>
+              <p> 22° C</p>
+            </div>
+            <hr />
+
+          </span>
+          <span>
+
+            <div style="display: flex;justify-content: space-between; gap: 20px;">
+              <p>Air Quality </p>
+              <p style="color: rgb(89, 238, 89);"> Fair</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p>Max UV Index </p>
+              <p> 2 Low</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p>Cloud Cover</p>
+              <p> 77%</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p>Visibility </p>
+              <p> 8 km</p>
+            </div>
+            <hr />
+            <div style="display: flex;justify-content: space-between;">
+              <p> Cloud Celing </p>
+              <p> 1900 m</p>
+            </div>
+
+          </span>
+        </div>
+      </div>
+      <!-- /* copy here */ -->
+    </div>
+    <div style="width:30%;">
+      <div style="background-color: white; padding: 150px; ">
+
+      </div>
+      <div style="background-color: white; padding: 20px; margin:20px 0;">
+        <h3>Top Stories</h3>
+        <hr />
+        <a style="display: flex; text-decoration: none; color: black;"
+          href="https://www.accuweather.com/en/hurricane/anger-mounts-in-southeast-texas-as-crippling-power-outages-and-heat-turn-deadly/1668370">
+          <div>
+            <h6>HURRICANE</h6>
+            <h4>Anger mounts in southeast Texas as crippling power outages and heat turn deadly</h4>
+            <h6>1 day ago</h6>
+          </div>
+          <img style="height: 70px; width: 70px; border-radius: 4px;"
+            src="https://cms.accuweather.com/wp-content/uploads/2024/07/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHlnczlpM2QwMDA4M2I2amEyMDJ2Z3F4-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2NseWduM3UxdjAwMG5jMXA0Zno4OGM2NDI.jpg?w=632" />
+        </a>
+        <hr />
+        <a style="display: flex; text-decoration: none; color: black;"
+          href="https://www.accuweather.com/en/hurricane/anger-mounts-in-southeast-texas-as-crippling-power-outages-and-heat-turn-deadly/1668370">
+          <div>
+            <h6>WEATHER FORECASTS</h6>
+            <h4>New sweltering heat wave to feature 100 F temperatures in East</h4>
+            <h6>49 minutes ago</h6>
+          </div>
+          <img style="height: 70px; width: 70px; border-radius: 4px;"
+            src="https://cms.accuweather.com/wp-content/uploads/2024/07/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHlnczlpM2QwMDA4M2I2amEyMDJ2Z3F4-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2NseWduM3UxdjAwMG5jMXA0Zno4OGM2NDI.jpg?w=632" />
+        </a>
+        <hr />
+        <a style="display: flex; text-decoration: none; color: black;"
+          href="https://www.accuweather.com/en/hurricane/anger-mounts-in-southeast-texas-as-crippling-power-outages-and-heat-turn-deadly/1668370">
+          <div>
+            <h6>WEATHER NEWS</h6>
+            <h4>At least 2 dead after heavy rainfall from Beryl submerges Vermont cities</h4>
+            <h6>1 day ago</h6>
+          </div>
+          <img style="height: 70px; width: 70px; border-radius: 4px;"
+            src="https://cms.accuweather.com/wp-content/uploads/2024/07/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHlnczlpM2QwMDA4M2I2amEyMDJ2Z3F4-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2NseWduM3UxdjAwMG5jMXA0Zno4OGM2NDI.jpg?w=632" />
+        </a>
+        <hr />
+        <a style="display: flex; text-decoration: none; color: black;"
+          href="https://www.accuweather.com/en/hurricane/anger-mounts-in-southeast-texas-as-crippling-power-outages-and-heat-turn-deadly/1668370">
+          <div>
+            <h6>HURRICANE</h6>
+            <h4>At least 2 dead after heavy rainfall from Beryl submerges Vermont cities</h4>
+            <h6>1 day ago</h6>
+          </div>
+          <img style="height: 70px; width: 70px; border-radius: 4px;"
+            src="https://cms.accuweather.com/wp-content/uploads/2024/07/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHlnczlpM2QwMDA4M2I2amEyMDJ2Z3F4-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2NseWduM3UxdjAwMG5jMXA0Zno4OGM2NDI.jpg?w=632" />
+        </a>
+        <hr />
+        <a style="text-decoration: none; color: black;" href="https://www.accuweather.com/en/weather-news">More
+          Stories</a>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
